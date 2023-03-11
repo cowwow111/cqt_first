@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>450</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>500</width>
+    <height>450</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>500</width>
+    <height>450</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#Form {border-image: url(:/img/regist1.jpg)}</string>
+  </property>
+  <widget class="QPushButton" name="main_menu_btn">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>40</y>
+     <width>51</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton  {
+	border-radius: 25px;
+	background-color:rgb(215, 255, 194);
+	
+}
+
+QPushButton:hover {
+	background-color: rgb(67, 99, 49);
+	border-radius: 25px
+}
+QPushButton:pressed {
+	background-color: rgb(215, 255, 194);
+	color:rgb(255, 255, 255);
+	border-radius: 25px
+}
+
+QPushButton:checked {
+	background-color: rgb(67, 99, 49);
+	color:rgb(255, 255, 255);
+	border-radius: 25px
+}</string>
+   </property>
+   <property name="text">
+    <string>菜单</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="back_btn">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>110</y>
+     <width>51</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton  {
+	border-radius: 25px;
+	background-color:rgb(215, 255, 194);
+	
+}
+
+QPushButton:hover {
+	background-color: rgb(67, 99, 49);
+	border-radius: 25px
+}
+QPushButton:pressed {
+	background-color: rgb(242, 255, 161);
+	color:rgb(255, 255, 255);
+	border-radius: 25px
+}</string>
+   </property>
+   <property name="text">
+    <string>返回</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="about_btn">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>10</y>
+     <width>51</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton  {
+	border-radius: 25px;
+	background-color:rgb(215, 255, 194);
+	
+}
+
+QPushButton:hover {
+	background-color: rgb(67, 99, 49);
+	border-radius: 25px
+}
+QPushButton:pressed {
+	background-color: rgb(242, 255, 161);
+	color:rgb(255, 255, 255);
+	border-radius: 25px
+}</string>
+   </property>
+   <property name="text">
+    <string>关于</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="clear_btn">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>80</y>
+     <width>51</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton  {
+	border-radius: 25px;
+	background-color:rgb(215, 255, 194);
+	
+}
+
+QPushButton:hover {
+	background-color: rgb(67, 99, 49);
+	border-radius: 25px
+}
+QPushButton:pressed {
+	background-color: rgb(242, 255, 161);
+	color:rgb(255, 255, 255);
+	border-radius: 25px
+}</string>
+   </property>
+   <property name="text">
+    <string>重置</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>220</y>
+     <width>201</width>
+     <height>167</height>
+    </rect>
+   </property>
+   <layout class="QFormLayout" name="formLayout">
+    <property name="verticalSpacing">
+     <number>20</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QLabel" name="account_lable">
+      <property name="styleSheet">
+       <string notr="true">color:rgb(0, 0, 103);
+font: 10pt &quot;宋体&quot;;</string>
+      </property>
+      <property name="text">
+       <string>账   号：</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="account_edit">
+      <property name="styleSheet">
+       <string notr="true">background-color:transparent;
+border:none;
+border-bottom: 1px solid black</string>
+      </property>
+      <property name="clearButtonEnabled">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="password_lable">
+      <property name="styleSheet">
+       <string notr="true">color:rgb(0, 0, 103);
+font: 10pt &quot;宋体&quot;;</string>
+      </property>
+      <property name="text">
+       <string>密   码：</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="password_edit">
+      <property name="styleSheet">
+       <string notr="true">background-color:transparent;
+border:none;
+border-bottom: 1px solid black</string>
+      </property>
+      <property name="clearButtonEnabled">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="confirm_lable">
+      <property name="styleSheet">
+       <string notr="true">color:rgb(0, 0, 103);
+font: 10pt &quot;宋体&quot;;</string>
+      </property>
+      <property name="text">
+       <string>确认密码：</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLineEdit" name="confirm_edit">
+      <property name="styleSheet">
+       <string notr="true">background-color:transparent;
+border:none;
+border-bottom: 1px solid black</string>
+      </property>
+      <property name="clearButtonEnabled">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QPushButton" name="register_btn">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>1</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: rgb(215, 255, 194);
+	border-radius: 20px
+}
+
+QPushButton:hover {
+	background-color: rgb(215, 255, 194);
+	border-radius: 20px
+}
+QPushButton:pressed {
+	background-color: rgb(242, 255, 161);
+	color:rgb(255, 255, 255);
+	border-radius: 20px
+}
+
+QPushButton.disabled {
+	background-color: rgb(180, 180, 180);
+	border-radius: 20px
+}</string>
+      </property>
+      <property name="text">
+       <string>注册</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <zorder>back_btn</zorder>
+  <zorder>about_btn</zorder>
+  <zorder>clear_btn</zorder>
+  <zorder>layoutWidget</zorder>
+  <zorder>main_menu_btn</zorder>
+ </widget>
+ <tabstops>
+  <tabstop>account_edit</tabstop>
+  <tabstop>password_edit</tabstop>
+  <tabstop>confirm_edit</tabstop>
+  <tabstop>register_btn</tabstop>
+  <tabstop>main_menu_btn</tabstop>
+  <tabstop>back_btn</tabstop>
+  <tabstop>about_btn</tabstop>
+  <tabstop>clear_btn</tabstop>
+ </tabstops>
+ <resources>
+  <include location="images.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>main_menu_btn</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>Form</receiver>
+   <slot>show_hide_menu()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>37</x>
+     <y>61</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-79</x>
+     <y>91</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>about_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>about()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>119</x>
+     <y>33</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-121</x>
+     <y>124</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>back_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>back()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>47</x>
+     <y>150</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-147</x>
+     <y>166</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>clear_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>123</x>
+     <y>109</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-157</x>
+     <y>210</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>register_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>check_register()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>352</x>
+     <y>363</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-203</x>
+     <y>445</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>account_edit</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>Form</receiver>
+   <slot>enable_register_btn()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>345</x>
+     <y>226</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>606</x>
+     <y>234</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>password_edit</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>Form</receiver>
+   <slot>enable_register_btn()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>388</x>
+     <y>264</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>631</x>
+     <y>264</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>confirm_edit</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>Form</receiver>
+   <slot>enable_register_btn()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>391</x>
+     <y>302</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>615</x>
+     <y>311</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>show_hide_menu()</slot>
+  <slot>about()</slot>
+  <slot>back()</slot>
+  <slot>clear()</slot>
+  <slot>check_register()</slot>
+  <slot>enable_register_btn()</slot>
+ </slots>
+</ui>

@@ -1,0 +1,10 @@
+<RCC>
+  <qresource prefix="img">
+    <file>regist1.jpg</file>
+    <file>lgz.jpg</file>
+    <file>bb.png</file>
+    <file>login_scut4.jpg</file>
+    <file>login_scut3.jpg</file>
+    <file>login_qrcode.jpg</file>
+  </qresource>
+</RCC>
